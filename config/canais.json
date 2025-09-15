@@ -1,0 +1,88 @@
+{
+  "titulo": "Mais de 10.000 canais disponíveis",
+  "subtitulo": "Entretenimento para toda família. Esportes, filmes, séries, desenhos, documentários e muito mais, tudo em alta qualidade.",
+  "categorias": [
+    {
+      "nome": "Esportes",
+      "icone": "Trophy", 
+      "quantidade": "150+",
+      "cor": "text-red-400",
+      "corFundo": "bg-red-400/10",
+      "canaisExemplo": ["ESPN", "ESPN Brasil", "SporTV", "SporTV 2", "SporTV 3", "Premiere", "Premiere 2", "Fox Sports", "Band Sports", "Combate"]
+    },
+    {
+      "nome": "Filmes & Séries",
+      "icone": "Film",
+      "quantidade": "200+", 
+      "cor": "text-purple-400",
+      "corFundo": "bg-purple-400/10",
+      "canaisExemplo": ["HBO", "HBO 2", "HBO Plus", "Telecine Premium", "Telecine Action", "Telecine Pipoca", "Warner Channel", "Sony Channel", "Universal TV", "AXN"]
+    },
+    {
+      "nome": "Entretenimento",
+      "icone": "Tv",
+      "quantidade": "300+",
+      "cor": "text-blue-400", 
+      "corFundo": "bg-blue-400/10",
+      "canaisExemplo": ["Globo", "SBT", "Record", "Band", "RedeTV", "Comedy Central", "TLC", "Discovery Channel", "History Channel", "National Geographic"]
+    },
+    {
+      "nome": "Internacionais", 
+      "icone": "Globe",
+      "quantidade": "500+",
+      "cor": "text-green-400",
+      "corFundo": "bg-green-400/10",
+      "canaisExemplo": ["CNN International", "BBC World", "Fox News", "DW", "France 24", "RAI", "TVE", "RTP", "TV5 Monde", "NHK World"]
+    },
+    {
+      "nome": "Infantil",
+      "icone": "Heart", 
+      "quantidade": "80+",
+      "cor": "text-pink-400",
+      "corFundo": "bg-pink-400/10",
+      "canaisExemplo": ["Cartoon Network", "Disney Channel", "Disney Junior", "Nickelodeon", "Discovery Kids", "Gloob", "SBT Kids", "TV Rá Tim Bum", "Baby TV", "Boomerang"]
+    },
+    {
+      "nome": "Games & Tech",
+      "icone": "Gamepad2",
+      "quantidade": "40+",
+      "cor": "text-orange-400",
+      "corFundo": "bg-orange-400/10", 
+      "canaisExemplo": ["SporTV Games", "Loading", "Twitch Streamers", "YouTube Gaming", "ESports TV", "Game Show", "Tech Review", "Innovation TV", "Digital World", "Cyber Sports"]
+    },
+    {
+      "nome": "Música",
+      "icone": "Music",
+      "quantidade": "60+",
+      "cor": "text-yellow-400",
+      "corFundo": "bg-yellow-400/10",
+      "canaisExemplo": ["MTV", "Music Box", "VH1", "BIS", "Multishow", "CMT", "Country Music TV", "Rock TV", "Pop Music", "Classical Music"]
+    },
+    {
+      "nome": "Educação",
+      "icone": "GraduationCap", 
+      "quantidade": "70+",
+      "cor": "text-indigo-400",
+      "corFundo": "bg-indigo-400/10",
+      "canaisExemplo": ["Discovery Science", "Animal Planet", "National Geographic", "History", "Discovery", "Travel Channel", "Food Network", "HGTV", "Investigation Discovery", "Science Channel"]
+    }
+  ],
+  "recursos": [
+    {
+      "titulo": "Full HD & 4K",
+      "descricao": "Qualidade de cinema"
+    },
+    {
+      "titulo": "EPG Completo", 
+      "descricao": "Guia de programação"
+    },
+    {
+      "titulo": "Sem Travamentos",
+      "descricao": "Streaming estável"
+    },
+    {
+      "titulo": "Multi Idiomas",
+      "descricao": "Legendas e dublagem"
+    }
+  ]
+}

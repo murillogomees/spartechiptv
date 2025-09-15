@@ -1,0 +1,42 @@
+{
+  "titulo": "Séries Populares",
+  "subtitulo": "As melhores séries do momento estão aqui",
+  "series": [
+    {
+      "titulo": "Breaking Bad",
+      "imagem": "https://images.unsplash.com/photo-1489599510025-b08945fa84e2?w=300&h=400&fit=crop",
+      "categoria": "Drama",
+      "ano": "2008-2013"
+    },
+    {
+      "titulo": "Game of Thrones", 
+      "imagem": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=400&fit=crop",
+      "categoria": "Fantasia",
+      "ano": "2011-2019"
+    },
+    {
+      "titulo": "Stranger Things",
+      "imagem": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=300&h=400&fit=crop",
+      "categoria": "Ficção Científica",
+      "ano": "2016-2025"
+    },
+    {
+      "titulo": "The Office",
+      "imagem": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=300&h=400&fit=crop",
+      "categoria": "Comédia",
+      "ano": "2005-2013"
+    },
+    {
+      "titulo": "Friends",
+      "imagem": "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=300&h=400&fit=crop",
+      "categoria": "Comédia",
+      "ano": "1994-2004"
+    },
+    {
+      "titulo": "The Crown",
+      "imagem": "https://images.unsplash.com/photo-1587074244090-70dfa113692c?w=300&h=400&fit=crop",
+      "categoria": "Drama Histórico",
+      "ano": "2016-2023"
+    }
+  ]
+}

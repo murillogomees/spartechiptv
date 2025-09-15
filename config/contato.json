@@ -1,0 +1,55 @@
+{
+  "titulo": "Entre em Contato",
+  "subtitulo": "Nossa equipe está sempre pronta para ajudar você. Escolha o canal que preferir para falar conosco.",
+  "metodosContato": [
+    {
+      "icone": "MessageCircle",
+      "titulo": "WhatsApp",
+      "descricao": "Resposta em até 5 minutos",
+      "acao": "Chamar no WhatsApp",
+      "link": "https://wa.me/5511999999999",
+      "destaque": true
+    },
+    {
+      "icone": "Phone", 
+      "titulo": "Telefone",
+      "descricao": "Atendimento 24/7",
+      "acao": "(11) 9999-9999",
+      "link": "tel:+5511999999999",
+      "destaque": false
+    },
+    {
+      "icone": "Mail",
+      "titulo": "Email",
+      "descricao": "Resposta em até 2 horas", 
+      "acao": "contato@iptv.com",
+      "link": "mailto:contato@iptv.com",
+      "destaque": false
+    }
+  ],
+  "horarioAtendimento": [
+    {
+      "dia": "Segunda a Sexta",
+      "horario": "08:00 - 22:00"
+    },
+    {
+      "dia": "Sábado",
+      "horario": "09:00 - 18:00"
+    },
+    {
+      "dia": "Domingo", 
+      "horario": "10:00 - 16:00"
+    }
+  ],
+  "suporteTecnico": [
+    "Configuração de Apps",
+    "Problemas de Conexão",
+    "Instalação de Players",
+    "Dúvidas sobre Planos"
+  ],
+  "atendimentoPremium": {
+    "titulo": "Atendimento Premium 24/7",
+    "descricao": "Tenha suporte prioritário e acesso a técnicos especializados",
+    "textoBotao": "Falar com Especialista"
+  }
+}

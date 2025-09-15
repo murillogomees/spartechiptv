@@ -1,0 +1,44 @@
+{
+  "textoRodape": "© 2024 IPTV Premium. Todos os direitos reservados.",
+  "descricao": "A melhor experiência em IPTV com mais de 10.000 canais em Full HD e 4K.",
+  "redesSociais": [
+    {
+      "nome": "WhatsApp",
+      "icone": "MessageCircle",
+      "link": "https://wa.me/5511999999999"
+    },
+    {
+      "nome": "Instagram",
+      "icone": "Instagram", 
+      "link": "https://instagram.com/iptvpremium"
+    },
+    {
+      "nome": "Facebook",
+      "icone": "Facebook",
+      "link": "https://facebook.com/iptvpremium"
+    },
+    {
+      "nome": "Telegram",
+      "icone": "Send",
+      "link": "https://t.me/iptvpremium"
+    }
+  ],
+  "linksUteis": [
+    {
+      "titulo": "Política de Privacidade",
+      "link": "/privacidade"
+    },
+    {
+      "titulo": "Termos de Uso", 
+      "link": "/termos"
+    },
+    {
+      "titulo": "FAQ",
+      "link": "/faq"
+    },
+    {
+      "titulo": "Suporte",
+      "link": "#contato"
+    }
+  ]
+}

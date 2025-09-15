@@ -1,0 +1,42 @@
+{
+  "titulo": "Filmes em Destaque", 
+  "subtitulo": "Os maiores sucessos do cinema mundial",
+  "filmes": [
+    {
+      "titulo": "Vingadores: Ultimato",
+      "imagem": "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=300&h=400&fit=crop",
+      "categoria": "Ação",
+      "ano": "2019"
+    },
+    {
+      "titulo": "Parasita",
+      "imagem": "https://images.unsplash.com/photo-1489599510025-b08945fa84e2?w=300&h=400&fit=crop",
+      "categoria": "Thriller",
+      "ano": "2019"
+    },
+    {
+      "titulo": "Coringa",
+      "imagem": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=400&fit=crop",
+      "categoria": "Drama",
+      "ano": "2019"
+    },
+    {
+      "titulo": "Top Gun: Maverick",
+      "imagem": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=300&h=400&fit=crop",
+      "categoria": "Ação",
+      "ano": "2022"
+    },
+    {
+      "titulo": "Duna",
+      "imagem": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=300&h=400&fit=crop",
+      "categoria": "Ficção Científica",
+      "ano": "2021"
+    },
+    {
+      "titulo": "No Time to Die",
+      "imagem": "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=300&h=400&fit=crop",
+      "categoria": "Ação",
+      "ano": "2021"
+    }
+  ]
+}

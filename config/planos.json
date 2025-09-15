@@ -1,0 +1,89 @@
+{
+  "titulo": "Escolha o plano ideal para você",
+  "subtitulo": "Todos os planos incluem teste grátis de 24 horas. Cancele quando quiser, sem burocracia.",
+  "planos": [
+    {
+      "nome": "Mensal",
+      "preco": "R$ 29,90",
+      "periodo": "/mês",
+      "icone": "Zap",
+      "descricao": "Perfeito para testar nosso serviço",
+      "recursos": [
+        "10.000+ Canais",
+        "Filmes e Séries", 
+        "Qualidade Full HD",
+        "2 Telas simultâneas",
+        "Suporte 24/7",
+        "EPG (Guia de programação)"
+      ],
+      "popular": false,
+      "textoBotao": "Escolher Plano"
+    },
+    {
+      "nome": "Trimestral",
+      "preco": "R$ 69,90", 
+      "periodo": "/3 meses",
+      "icone": "Star",
+      "descricao": "Economia de 22% - Mais popular",
+      "recursos": [
+        "10.000+ Canais",
+        "Filmes e Séries",
+        "Qualidade Full HD + 4K", 
+        "3 Telas simultâneas",
+        "Suporte 24/7",
+        "EPG (Guia de programação)",
+        "Acesso a conteúdo adulto"
+      ],
+      "popular": true,
+      "textoBotao": "Mais Popular"
+    },
+    {
+      "nome": "Semestral",
+      "preco": "R$ 119,90",
+      "periodo": "/6 meses", 
+      "icone": "Crown",
+      "descricao": "Economia de 33% - Melhor custo-benefício",
+      "recursos": [
+        "10.000+ Canais",
+        "Filmes e Séries",
+        "Qualidade Full HD + 4K",
+        "4 Telas simultâneas",
+        "Suporte 24/7 prioritário",
+        "EPG (Guia de programação)",
+        "Acesso a conteúdo adulto",
+        "Download offline"
+      ],
+      "popular": false,
+      "textoBotao": "Melhor Oferta"
+    },
+    {
+      "nome": "Anual",
+      "preco": "R$ 199,90",
+      "periodo": "/ano",
+      "icone": "Crown", 
+      "descricao": "Economia de 44% - Máximo valor",
+      "recursos": [
+        "10.000+ Canais",
+        "Filmes e Séries", 
+        "Qualidade Full HD + 4K",
+        "5 Telas simultâneas",
+        "Suporte 24/7 VIP",
+        "EPG (Guia de programação)",
+        "Acesso a conteúdo adulto",
+        "Download offline",
+        "Conteúdo exclusivo"
+      ],
+      "popular": false,
+      "textoBotao": "Máxima Economia"
+    }
+  ],
+  "informacoesAdicionais": {
+    "testeGratis": "🔥 Teste Grátis por 24 horas em todos os planos",
+    "beneficios": [
+      "✅ Sem taxa de instalação",
+      "✅ Sem fidelidade", 
+      "✅ Cancele quando quiser",
+      "✅ Acesso imediato"
+    ]
+  }
+}

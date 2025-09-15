@@ -1,83 +1,72 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Phone, Mail, MapPin, Clock, Headphones } from "lucide-react";
+import { MessageCircle, Phone, Mail, Clock, Headphones } from "lucide-react";
+import { useConfig, ContatoConfig } from "@/hooks/useConfig";
 
 const ContactSection = () => {
-  const contactMethods = [
-    {
-      icon: MessageCircle,
-      title: "WhatsApp",
-      description: "Resposta em até 5 minutos",
-      action: "Chamar no WhatsApp",
-      href: "https://wa.me/5511999999999",
-      featured: true,
-    },
-    {
-      icon: Phone,
-      title: "Telefone",
-      description: "Atendimento 24/7",
-      action: "(11) 9999-9999",
-      href: "tel:+5511999999999",
-      featured: false,
-    },
-    {
-      icon: Mail,
-      title: "Email",
-      description: "Resposta em até 2 horas",
-      action: "contato@iptv.com",
-      href: "mailto:contato@iptv.com",
-      featured: false,
-    },
-  ];
+  const contatoConfig = useConfig<ContatoConfig>('contato.json');
 
-  const businessHours = [
-    { day: "Segunda a Sexta", hours: "08:00 - 22:00" },
-    { day: "Sábado", hours: "09:00 - 18:00" },
-    { day: "Domingo", hours: "10:00 - 16:00" },
-  ];
+  if (!contatoConfig) {
+    return <div className="py-20 bg-background">
+      <div className="container mx-auto px-6 text-center">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary mx-auto"></div>
+      </div>
+    </div>;
+  }
+
+  const getIcon = (iconName: string) => {
+    const icons: { [key: string]: any } = {
+      MessageCircle,
+      Phone,
+      Mail,
+      Clock,
+      Headphones
+    };
+    return icons[iconName] || MessageCircle;
+  };
 
   return (
     <section id="contato" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gradient-primary mb-4">
-            Entre em Contato
+            {contatoConfig.titulo}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Nossa equipe está sempre pronta para ajudar você. Escolha o canal que preferir para falar conosco.
+            {contatoConfig.subtitulo}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          {contactMethods.map((method) => {
-            const Icon = method.icon;
+          {contatoConfig.metodosContato.map((metodo) => {
+            const Icon = getIcon(metodo.icone);
             return (
               <Card 
-                key={method.title} 
+                key={metodo.titulo} 
                 className={`bg-gradient-card border-border text-center ${
-                  method.featured ? 'shadow-glow ring-2 ring-primary/20' : ''
+                  metodo.destaque ? 'shadow-glow ring-2 ring-primary/20' : ''
                 }`}
               >
                 <CardHeader>
                   <div className={`mx-auto p-3 rounded-full w-fit ${
-                    method.featured 
+                    metodo.destaque 
                       ? 'bg-gradient-primary shadow-glow' 
                       : 'bg-gradient-accent'
                   }`}>
                     <Icon className="h-8 w-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-xl text-foreground">{method.title}</CardTitle>
+                  <CardTitle className="text-xl text-foreground">{metodo.titulo}</CardTitle>
                   <CardDescription className="text-muted-foreground">
-                    {method.description}
+                    {metodo.descricao}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Button
-                    variant={method.featured ? "default" : "outline"}
+                    variant={metodo.destaque ? "default" : "outline"}
                     className="w-full"
-                    onClick={() => window.open(method.href, '_blank')}
+                    onClick={() => window.open(metodo.link, '_blank')}
                   >
-                    {method.action}
+                    {metodo.acao}
                   </Button>
                 </CardContent>
               </Card>
@@ -98,10 +87,10 @@ const ContactSection = () => {
             </CardHeader>
             <CardContent>
               <div className="space-y-3">
-                {businessHours.map((schedule) => (
-                  <div key={schedule.day} className="flex justify-between items-center">
-                    <span className="text-foreground font-medium">{schedule.day}</span>
-                    <span className="text-muted-foreground">{schedule.hours}</span>
+                {contatoConfig.horarioAtendimento.map((horario) => (
+                  <div key={horario.dia} className="flex justify-between items-center">
+                    <span className="text-foreground font-medium">{horario.dia}</span>
+                    <span className="text-muted-foreground">{horario.horario}</span>
                   </div>
                 ))}
               </div>
@@ -120,22 +109,12 @@ const ContactSection = () => {
             </CardHeader>
             <CardContent>
               <div className="space-y-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-foreground">Configuração de Apps</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-foreground">Problemas de Conexão</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-foreground">Instalação de Players</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-foreground">Dúvidas sobre Planos</span>
-                </div>
+                {contatoConfig.suporteTecnico.map((suporte, index) => (
+                  <div key={index} className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-foreground">{suporte}</span>
+                  </div>
+                ))}
               </div>
             </CardContent>
           </Card>
@@ -145,14 +124,14 @@ const ContactSection = () => {
           <Card className="bg-gradient-primary/10 border-primary/20 shadow-glow inline-block">
             <CardContent className="p-6">
               <h3 className="text-xl font-bold text-gradient-primary mb-2">
-                Atendimento Premium 24/7
+                {contatoConfig.atendimentoPremium.titulo}
               </h3>
               <p className="text-muted-foreground mb-4">
-                Tenha suporte prioritário e acesso a técnicos especializados
+                {contatoConfig.atendimentoPremium.descricao}
               </p>
               <Button variant="default" className="gap-2">
                 <MessageCircle className="h-4 w-4" />
-                Falar com Especialista
+                {contatoConfig.atendimentoPremium.textoBotao}
               </Button>
             </CardContent>
           </Card>

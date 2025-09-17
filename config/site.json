@@ -1,5 +1,5 @@
 {
-  "titulo": "IPTV Premium",
+  "titulo": "Spartech IPTV",
   "logo": "/logo.png",
   "favicon": "/favicon.ico",
   "cores": {
@@ -17,8 +17,8 @@
     "ring": "220 90% 56%"
   },
   "meta": {
-    "description": "IPTV Premium - Mais de 10.000 canais, filmes e séries em Full HD e 4K",
-    "keywords": "IPTV, streaming, canais, filmes, séries, TV online",
-    "author": "IPTV Premium"
+    "description": "Spartech IPTV Premium - Mais de 80.000 canais, filmes e séries em Full HD e 4K",
+    "keywords": "Spartech, IPTV, streaming, canais, filmes, séries, TV online",
+    "author": "Spartech IPTV Premium"
   }
 }
